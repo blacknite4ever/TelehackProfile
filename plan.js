@@ -34,6 +34,7 @@ function draw() {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
   ctx.fillRect(0, 0, width, height);
   ctx.fillStyle = '#f00'; // Set the rain color to red
+  ctx.fillStyle = 'rgba(255, 0, 0, 0.3)';
   ctx.font = `${fontSize}px monospace`;
 
   for (let i = 0; i < drops.length; i++) {
