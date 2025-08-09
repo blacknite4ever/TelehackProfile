@@ -1,50 +1,81 @@
-// Create a canvas element and add it to the body
-const canvas = document.createElement('canvas');
-const body = document.body;
-body.appendChild(canvas);
+// --- Start of Web 1.0 Style Script ---
 
-// Style the canvas to cover the background
-canvas.style.position = 'fixed';
-canvas.style.top = '0';
-canvas.style.left = '0';
-canvas.style.width = '100%';
-canvas.style.height = '100%';
-canvas.style.zIndex = '-1';
+// Set the body styles
+document.body.style.backgroundColor = '#808080';
+document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
+document.body.style.backgroundRepeat = 'repeat';
+document.body.style.color = '#000';
+document.body.style.fontFamily = "'Times New Roman', serif";
+document.body.style.textAlign = 'center';
 
-const ctx = canvas.getContext('2d');
-let width = canvas.width = window.innerWidth;
-let height = canvas.height = window.innerHeight;
-
-window.addEventListener('resize', () => {
-  width = canvas.width = window.innerWidth;
-  height = canvas.height = window.innerHeight;
-});
-
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$%^&*()_+-={}[]:";<>?,./|\\';
-const charArray = characters.split('');
-const fontSize = 15;
-const columns = Math.floor(width / fontSize);
-const drops = [];
-
-for (let i = 0; i < columns; i++) {
-  drops[i] = 1;
-}
-
-function draw() {
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-  ctx.fillRect(0, 0, width, height);
-  ctx.fillStyle = '#17cf5d'; // Set the rain color to red
-  ctx.font = `${fontSize}px monospace`;
-
-  for (let i = 0; i < drops.length; i++) {
-    const text = charArray[Math.floor(Math.random() * charArray.length)];
-    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-    if (drops[i] * fontSize > height && Math.random() > 0.975) {
-      drops[i] = 0;
-    }
-    drops[i]++;
+// Create a new style element to define classes and insert it into the head
+const style = document.createElement('style');
+style.textContent = `
+  h1 {
+    color: #000080;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid #000080;
+    padding-bottom: 10px;
+    margin: 0;
   }
-}
 
-setInterval(draw, 33);
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 #333;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #000;
+    font-size: 0.8em;
+  }
+
+  .counter {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+`;
+document.head.appendChild(style);
+
+// Find the pre tag and the h1 tag
+const pre = document.querySelector('pre');
+const h1 = document.querySelector('h1');
+
+// Create the main container div
+const container = document.createElement('div');
+container.classList.add('container');
+
+// Move the h1 and pre tags into the new container
+container.appendChild(h1);
+container.appendChild(pre);
+
+// Append the container to the body
+document.body.appendChild(container);
+
+// Apply styles to the pre tag
+pre.style.whiteSpace = 'pre-wrap';
+pre.style.textAlign = 'left';
+
+// Create the footer div with visitor counter and HTML checkmark
+const footer = document.createElement('div');
+footer.classList.add('footer');
+footer.innerHTML = `
+  <p>This page has been visited <span class="counter" id="visitor-count">0</span> times.</p>
+  <p>
+    <img src="https://www.w3.org/Icons/valid-html401-blue.png" alt="Valid HTML 4.01" />
+    <a href="http://picks.yahoo.com/"><img src="pick_of_the_week.gif" alt="" border="0" height="37" width="153">
+    <img src="pick_of_the_week.gif" alt="" border="0" height="37" width="153"></a>
+  </p>
+`;
+container.appendChild(footer);
+
+// Generate a random number for the visitor counter
+const visitorCount = Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+document.getElementById('visitor-count').textContent = visitorCount;
+
+// --- End of Web 1.0 Style Script ---
