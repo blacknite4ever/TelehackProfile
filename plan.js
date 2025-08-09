@@ -2,7 +2,7 @@
 
 // Set the body styles
 document.body.style.backgroundColor = '#808080';
-document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
+document.body.style.backgroundImage = "url('https://i.imgur.com/8Q73w4V.gif')";
 document.body.style.backgroundRepeat = 'repeat';
 document.body.style.color = '#000';
 document.body.style.fontFamily = "'Times New Roman', serif";
@@ -50,16 +50,21 @@ const h1 = document.querySelector('h1');
 const container = document.createElement('div');
 container.classList.add('container');
 
-// Move the h1 and pre tags into the new container
-container.appendChild(h1);
-container.appendChild(pre);
+// Only move h1 and pre if they exist to prevent errors
+if (h1) {
+  container.appendChild(h1);
+}
+if (pre) {
+  container.appendChild(pre);
+  // Apply styles to the pre tag
+  pre.style.whiteSpace = 'pre-wrap';
+  pre.style.textAlign = 'left';
+}
+
 
 // Append the container to the body
 document.body.appendChild(container);
 
-// Apply styles to the pre tag
-pre.style.whiteSpace = 'pre-wrap';
-pre.style.textAlign = 'left';
 
 // Create the footer div with visitor counter and HTML checkmark
 const footer = document.createElement('div');
