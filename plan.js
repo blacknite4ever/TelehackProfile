@@ -68,8 +68,8 @@ footer.innerHTML = `
   <p>This page has been visited <span class="counter" id="visitor-count">0</span> times.</p>
   <p>
     <img src="https://www.w3.org/Icons/valid-html401-blue.png" alt="Valid HTML 4.01" />
-    <a href="http://picks.yahoo.com/"><img src="pick_of_the_week.gif" alt="" border="0" height="37" width="153">
-    <img src="pick_of_the_week.gif" alt="" border="0" height="37" width="153"></a>
+    <br>
+    <a href="http://picks.yahoo.com/"><img src="https://placehold.co/153x37/000/fff?text=Yahoo+Badge" alt="Pick of the Week" border="0" height="37" width="153"></a>
   </p>
 `;
 container.appendChild(footer);
