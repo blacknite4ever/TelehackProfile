@@ -67,7 +67,7 @@ if (h1) {
 if (pre) {
   container.appendChild(pre);
   // Apply styles to the pre tag
-  pre.style.white-space = 'pre-wrap';
+  pre.style.whiteSpace = 'pre-wrap';
   pre.style.textAlign = 'left';
   // Explicitly set the font and color to override any other styles
   pre.style.color = '#fff';
