@@ -18,9 +18,9 @@ document.body.style.textAlign = 'center';
 const style = document.createElement('style');
 style.textContent = `
   h1 {
-    color: #000080;
+    color: #00ffff; /* Classic light blue heading */
     font-family: 'Courier New', Courier, monospace;
-    border-bottom: 2px solid #000080;
+    border-bottom: 2px solid #00ffff;
     padding-bottom: 10px;
     margin: 0;
   }
@@ -29,15 +29,19 @@ style.textContent = `
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    box-shadow: 5px 5px 0 #333;
+    background-color: #000; /* Black container */
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 0 #666;
+  }
+
+  a {
+    color: #00ff00; /* Classic green links */
   }
 
   .footer {
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px dashed #000;
+    border-top: 1px dashed #fff;
     font-size: 0.8em;
   }
 
@@ -63,14 +67,15 @@ if (h1) {
 if (pre) {
   container.appendChild(pre);
   // Apply styles to the pre tag
-  pre.style.whiteSpace = 'pre-wrap';
+  pre.style.white-space = 'pre-wrap';
   pre.style.textAlign = 'left';
+  // Explicitly set the font and color to override any other styles
+  pre.style.color = '#fff';
+  pre.style.fontFamily = "'Times New Roman', serif";
 }
-
 
 // Append the container to the body
 document.body.appendChild(container);
-
 
 // Create the footer div with visitor counter and HTML checkmark
 const footer = document.createElement('div');
@@ -85,7 +90,9 @@ footer.innerHTML = `
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/e-dos.gif" alt="e-dos" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/gateway_2000.gif" alt="gateway_2000" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/keep.gif" alt="keep" height="31" width="88">
+    <p>This page was last updated: August 10, 2025<
   </p>
+  <p>This page was last updated: August 10, 2025</p>
 `;
 container.appendChild(footer);
 
