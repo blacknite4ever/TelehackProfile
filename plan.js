@@ -80,7 +80,7 @@ footer.innerHTML = `
   <p>
     <img src="https://www.w3.org/Icons/valid-html401-blue.png" alt="Valid HTML 4.01" />
     <br>
-     <img src="https://blacknite4ever.github.io/TelehackProfile/images/pick-of-the-week.gif" alt="telnet" height="31" width="88">
+     <img src="https://blacknite4ever.github.io/TelehackProfile/images/pick_of_the_week.gif" alt="telnet" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/telnet.gif" alt="telnet" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/e-dos.gif" alt="e-dos" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/gateway_2000.gif" alt="gateway_2000" height="31" width="88">
