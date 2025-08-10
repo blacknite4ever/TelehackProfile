@@ -2,7 +2,7 @@
 
 // Set the body styles
 document.body.style.backgroundColor = '#808080';
-document.body.style.backgroundImage = "url('https://i.imgur.com/8Q73w4V.gif')";
+document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
 document.body.style.backgroundRepeat = 'repeat';
 document.body.style.color = '#000';
 document.body.style.fontFamily = "'Times New Roman', serif";
@@ -74,7 +74,10 @@ footer.innerHTML = `
   <p>
     <img src="https://www.w3.org/Icons/valid-html401-blue.png" alt="Valid HTML 4.01" />
     <br>
-    <a href="http://picks.yahoo.com/"><img src="https://placehold.co/153x37/000/fff?text=Yahoo+Badge" alt="Pick of the Week" border="0" height="37" width="153"></a>
+    <a href="http://picks.yahoo.com/"><img src="http://www.jeffbots.com/pick_of_the_week.gif" border="0" height="37" width="153"></a>
+    <img src=https://cyber.dabamos.de/88x31/e-dos.gif" alt="e-dos" height="31" width="88">
+    <img src="https://cyber.dabamos.de/88x31/gateway_2000.gif" alt="gateway_2000" height="31" width="88">
+    <img src="https://cyber.dabamos.de/88x31/keep.gif" alt="keep" height="31" width="88">
   </p>
 `;
 container.appendChild(footer);
