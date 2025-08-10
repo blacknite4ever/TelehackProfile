@@ -7,7 +7,7 @@ if (oldCanvas) {
 }
 
 // Set the body styles
-document.body.style.backgroundColor = '#808080';
+document.body.style.backgroundColor = '#333';
 document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
 document.body.style.backgroundRepeat = 'repeat';
 document.body.style.color = '#000';
