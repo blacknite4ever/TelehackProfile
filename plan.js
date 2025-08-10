@@ -1,5 +1,11 @@
 // --- Start of Web 1.0 Style Script ---
 
+// Clean up any old elements from previous scripts, like the canvas
+const oldCanvas = document.querySelector('canvas');
+if (oldCanvas) {
+  oldCanvas.remove();
+}
+
 // Set the body styles
 document.body.style.backgroundColor = '#808080';
 document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
@@ -74,7 +80,7 @@ footer.innerHTML = `
   <p>
     <img src="https://www.w3.org/Icons/valid-html401-blue.png" alt="Valid HTML 4.01" />
     <br>
-    <img src="http://www.jeffbots.com/pick_of_the_week.gif" border="0" height="37" width="153">
+    <img src="https://cyber.dabamos.de/88x31/telnet.gif" alt="telnet" height="31" width="88">
     <img src="https://cyber.dabamos.de/88x31/e-dos.gif" alt="e-dos" height="31" width="88">
     <img src="https://cyber.dabamos.de/88x31/gateway_2000.gif" alt="gateway_2000" height="31" width="88">
     <img src="https://cyber.dabamos.de/88x31/keep.gif" alt="keep" height="31" width="88">
