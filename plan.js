@@ -10,7 +10,7 @@ if (oldCanvas) {
 document.body.style.backgroundColor = '#333';
 document.body.style.backgroundImage = "url('https://esperanto-panorama.net/bildoj/fono.jpg')";
 document.body.style.backgroundRepeat = 'repeat';
-document.body.style.color = '#000';
+document.body.style.color = '#33db04';
 document.body.style.fontFamily = "'Times New Roman', serif";
 document.body.style.textAlign = 'center';
 
