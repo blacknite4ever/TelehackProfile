@@ -90,7 +90,6 @@ footer.innerHTML = `
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/e-dos.gif" alt="e-dos" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/gateway_2000.gif" alt="gateway_2000" height="31" width="88">
     <img src="https://blacknite4ever.github.io/TelehackProfile/images/keep.gif" alt="keep" height="31" width="88">
-    <p>This page was last updated: August 10, 2025<
   </p>
   <p>This page was last updated: August 10, 2025</p>
 `;
