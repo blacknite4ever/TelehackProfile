@@ -30,7 +30,7 @@ style.textContent = `
     margin: 0 auto;
     padding: 20px;
     background-color: #000; /* Black container */
-    border: 2px solid #fff;
+    border: 2px solid ##33db04;
     box-shadow: 5px 5px 0 #666;
   }
 
@@ -70,7 +70,7 @@ if (pre) {
   pre.style.whiteSpace = 'pre-wrap';
   pre.style.textAlign = 'left';
   // Explicitly set the font and color to override any other styles
-  pre.style.color = '#fff';
+  pre.style.color = '##33db04';
   pre.style.fontFamily = "'Times New Roman', serif";
 }
 
